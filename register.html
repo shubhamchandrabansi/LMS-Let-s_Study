@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        input{
+            margin-top: 20px;
+            width: 300px;
+            height: 30px;
+            font-size: large;
+            border-radius: 2px;
+            font-family: 'Times New Roman', Times, serif;
+            text-transform:none;
+
+        }
+
+        button{
+            margin-top: 20px;
+            margin-bottom: 30px;
+            height: 25px;
+            width: 100px;
+            border-radius: 25px;
+            font-size: large;
+            background-color: rgb(24, 55, 190);
+            color: white;
+
+            
+            
+        }
+
+        button:hover{
+            cursor: pointer;
+        }
+
+
+
+
+    </style>
+
+</head>
+<body style="background-color: grey;">
+    <header>
+
+    
+        <a href="INDEX.html" class="logo"><i class="fas fa-user-graduate"></i> Let's Study</a>
+    
+        <nav class="navbar">
+            
+        </nav>
+    
+    
+    </header>
+    <div style="text-align: center;padding-top: 80px;">
+
+    
+
+    <h1 style="font-size: 40px; color: rgb(24, 55, 190);">Register</h1>
+
+    <div>
+        <form action="php/register.php" method="POST">
+        <input type="text" name="name" id="name" placeholder=" Name" required> <br>
+        <input type="text" name="email" id="email" placeholder=" Email" required> <br>
+        <input type="password" name="password" id="pass1" placeholder=" Password" required> <br>
+        <input type="password" id="pass2" placeholder=" Confirm password" onchange="checkPassword(this.value)" required> <br>
+        <div style="margin-top: 20px;font-size: 16px;">
+            Security Question: What is your nick name? 
+        </div>
+        <input type="text" name="security" id="qs" placeholder=" Answer"> <br>
+
+        <!-- <input type="button" name="submit" id="sub" value="SUBMIT" class="btn"> -->
+
+
+        <button type="submit" name="submit">SUBMIT</button>
+        </form>
+
+    </div>
+
+
+
+
+
+
+    </div>
+
+    <!-- footer section starts  -->
+
+<div class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>branch locations</h3>
+            <a href="#">India</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="INDEX.php">home</a>
+            <a href="INDEX.php">about</a>
+            <a href="INDEX.php">course</a>
+            <a href="INDEX.php">teachers</a>
+            <a href="INDEX.php">contact</a>
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <p> <i class="fas fa-map-marker-alt"></i> Patna , India 801503 </p>
+            <p> <i class="fas fa-envelope"></i> lets_study@gmail.com </p>
+            <p> <i class="fas fa-phone"></i> +120-4567-7890 </p>
+        </div>
+
+    </div>
+
+    <h1 class="credit">created by <a href="https://www.instagram.com/_call_me_developer/" target="_blank">Shubham Kumar Chandrabansi</a> , all rights reserved. </h1>
+
+</div>
+
+<!-- footer section ends -->
+
+</body>
+</html>
+
+
+
+<!-- jquery cdn link  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
